@@ -1,5 +1,5 @@
 {
-  "name": "@chgdev/date-time-utils",
+  "name": "@chg/date-time-utils",
   "version": "1.0.0",
   "description": "This allows for basic date and time calculations",
   "main": "index.js",
@@ -8,11 +8,7 @@
     "test:watch": "jest --watch",
     "lint": "eslint ."
   },
-  "keywords": [
-    "chg",
-    "dates",
-    "calculations"
-  ],
+  "keywords": ["chg", "dates", "calculations"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chgdev/datetimeutils.git"

@@ -5,19 +5,21 @@ const moment = require("moment");
  * @param {string} endDate
  * @param {string} startTime
  * @param {string} endTime
+ * @param {string} dateTimeFormat
  */
 const calcDuration = (
   startDate,
   endDate,
   startTime = "00:00:00",
-  endTime = "00:00:00"
+  endTime = "00:00:00",
+  dateTimeFormat = "MM/DD/YYYY h:mm A"
 ) => {
   if (startDate && startTime && endDate && endTime) {
     const startDateTime = moment(
       startDate + " " + startTime,
-      "MM/DD/YYYY h:mm A"
+      dateTimeFormat
     );
-    const endDateTime = moment(endDate + " " + endTime, "MM/DD/YYYY h:mm A");
+    const endDateTime = moment(endDate + " " + endTime, dateTimeFormat);
     const duration = moment.duration(endDateTime.diff(startDateTime));
     return humanizeDuration(duration);
   } else return "";

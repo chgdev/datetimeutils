@@ -1,21 +1,21 @@
 language: node_js
 node_js:
-  - "8.15"
+- '8.15'
 script:
-  - npm ci
+- npm ci
 stages:
-  - name: test
-  - name: deploy
-    if: branch = master
+- name: test
+- name: deploy
+  if: branch = master
 jobs:
   include:
-    - stage: test
-      script: npm run test
+  - stage: test
+    script: npm run test
 deploy:
   provider: npm
-  email: chgpdeteam+npm@gmail.com
+  email: joseph.vanwagoner@chghealthcare.com
   api_key:
-    secure: NxIK2ZNSmbDJVBhSdFmH+SKHimjePVtGjYrcZcrWdBw/ujVlUWWbVAq9gs8EoeR/0Gv9h1lVWRYJBEQ6VQOe4VTkqmrgowKgR4hYsYUrLzFySwFWptwaZ8JGgU4nIo6kv0wTNrciMRJ/tJmPAZ4DmPH4xlUl8m3rsjJkmiXYt1Jclw3W0NfIGd1nMXjlJRRIqacVWlRXsEG2f7v9z7wu0X5s67gtYjemZ4eEHng8SPhQoaAxoW+H6IP2dngp0r8UFDSKEqWy8jN3I3zx8C75POTGn3zNw6wntHo0eFA7fAAoOb0c8GDyzcClqgYdt+FpjlFy7pYKg3f3rsk+LQ1GO5ytlnxXkEwGVcWpjsGrD+lG6juxfgnEbEMeA+i/Jw8pnlBZit4syDZqVVLjgDTDjvRZbtScaJw3v0Pjz5vnrieaEtF4sLOxi4JFYGFWsKJtrgIyi6RxDN9/yEOiSJfmi4IMjXhaXUv5eZ0cLENUxXgIvaScXsBIsEqUGHIxeRqj1twP3JopfJI4iAjfQQtOdk86dqpOywXp7KvFov5tHiUlgLBkZY6EOD7oqXcLef1QYjzw1J2nfnpJKpVKmRBsbmdus7CLx+1vNKB/au9huRvWHu7+QOPvPAqLPOG7ssxx+JI4MoSqjgsCcXxx19V4G/owZBMiHzRGsp5U685/om0=
+    secure: JAFK8u0UkIuArpvxULzZdP5ERKtoMe4z1u6EFrIVLgZvkMkbhRzXFCkkHfAWA9tikI79XTh+Bv/EGgnB3gTlodx0WVsb1ZJ7keJwZeozjr0gUCMp5/6Dr8UbW1HuVdvCyna7FtOx/4kE+0huqqc4Fb4nvlHaFT52QSIuGNTEscN20ofMBrSu1+6IjXBvsxBfYosfWi4XSlqNqg7G9yA/dyBNA/tgrwtfuEGWwfGf84VCckoxHN03+OD/gkuUbKrQToiUZrQ12Eyiju4LviwEUirbJNQvxVyXPP6zF2xoQ/3jMTWJyUjdMpNfgzkn19UGXfU/o5WWPIctSTVnC7F6fKMu+Drlhlt7ka0Mc2d6fzDwKypFjTq+mu9L5xMJno3xspu2tp5pss1Nej9dxK16cnxCOHCEI1hmoyOlQyqhVYoe8H44eW/sGQEbqTt+oCBJDfo8vYlFzJVKkE2DqnggWz8ozhXu+3v9ZlRyPTv2znbqMpVIwSgv4fBs6MqCqWFa5haUQ9w82qFDzdtohjUSwE+MM2uAkWpTkrRetyo7a8FaI5Smd5T5f1WKsFJna2SjrDwkiQm+xogxNTbuhvyITrcLxOcuNYrucOEvYzXwaD7LSi5rfVjHnqjX1OURL+c5jssRqTQ0LNWDHUPteDkSpjrVh461fiEreV9pavWooxc=
   on:
     repo: chgdev/datetimeutils
     branch: master

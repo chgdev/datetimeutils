@@ -1,0 +1,61 @@
+Command line:
+"travis"
+
+
+   ________                                 __
+  /        |                               /  |
+  ########/ ______    ______    __     __  ##/    _______
+     ## |  /      \  /      \  /  \   /  | /  |  /       |
+     ## | /######  | ######  | ##  \ /##/  ## | /#######/
+     ## | ## |  ##/  /    ## |  ##  /##/   ## | ##      \
+     ## | ## |      /####### |   ## ##/    ## |  ######  |
+     ## | ## |      ##    ## |    ###/     ## | /     ##/
+     ##/  ##/        #######/      #/      ##/  #######/
+
+     TRajectory Analyzer and VISualizer  -  Open-source freeware under GNU GPL v3
+
+     Copyright (c) Martin Brehm      (2009-2017), University of Halle (Saale)
+                   Martin Thomas     (2012-2017)
+                   Barbara Kirchner  (2009-2017), University of Bonn
+
+     http://www.travis-analyzer.de
+
+     Please cite: M. Brehm, B. Kirchner: J. Chem. Inf. Model. 2011, 51 (8), pp 2007-2023.
+
+     There is absolutely no warranty on any results obtained from TRAVIS.
+
+  #  Running on SLCL-A012917 at Fri Nov  1 14:04:57 2019 (PID 9983).
+  #  Running in /c/pde/datetimeutils
+  #  Code version: Aug 12 2017, compiled at Jan 14 2018 01:39:14, compiler "7.2.0", GCC 7.2.0
+  #  Target platform: Linux, compile flags: DEBUG_ARRAYS 
+  #  Machine: int=4b, long=8b, addr=8b, 0xA0B0C0D0=D0,C0,B0,A0.
+  #  User home: /home/jvanwago, executable: /usr/bin/travis
+  #  Input from terminal, Output to terminal
+
+ >>> Please use a color scheme with dark background or specify "-nocolor"! <<<
+
+    No configuration file found.
+    Writing default configuration to /home/jvanwago/.travis.conf ...
+
+    No trajectory file specified.
+    Please use the "-p" flag to specify an input trajectory in the command line.
+
+    Enter the file name of the trajectory file to open: [Quit] 
+
+*** SIGINT caught: Hard interrupt by user ***
+Stopping execution.
+Decoding line numbers... ("addr2line <addr> -f -i -C -e /usr/bin/travis")
+ # 13 - [0x7f8b5c0f80d6] - ?? - ??:0 
+ # 12 - [0x7f8b5c0f8789] - ?? - ??:0 
+ # 11 - [0x7f8b5c0f8854] - ?? - ??:0 
+ # 10 - [0x7f8b5aeeef20] - ?? - ??:0 
+ #  9 - [0x7f8b5afc007f] - ?? - ??:0 
+ #  8 - [0x7f8b5af3d148] - ?? - ??:0 
+ #  7 - [0x7f8b5af3e3f2] - ?? - ??:0 
+ #  6 - [0x7f8b5af2fe62] - ?? - ??:0 
+ #  5 - [0x7f8b5af2ebcd] - ?? - ??:0 
+ #  4 - [0x7f8b5c0f0954] - ?? - ??:0 
+ #  3 - [0x7f8b5c0122e1] - ?? - ??:0 
+ #  2 - [0x7f8b5aed1b97] - ?? - ??:0 
+ #  1 - [0x7f8b5c0441ba] - ?? - ??:0 
+Delivering control to operating system.

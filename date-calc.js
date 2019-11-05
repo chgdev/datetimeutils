@@ -7,13 +7,13 @@ const moment = require("moment");
  * @param {string} endTime
  * @param {string} dateTimeFormat
  */
-const calcDuration = (
+const calcDuration = function(
   startDate,
   endDate,
   startTime = "00:00:00",
   endTime = "00:00:00",
   dateTimeFormat = "MM/DD/YYYY h:mm A"
-) => {
+) {
   if (startDate && startTime && endDate && endTime) {
     const startDateTime = moment(
       startDate + " " + startTime,
@@ -25,7 +25,7 @@ const calcDuration = (
   } else return "";
 };
 
-const humanizeDuration = duration => {
+const humanizeDuration = function(duration) {
   const hours = parseInt(duration.asHours());
   const minutes = parseInt(duration.asMinutes()) % 60;
   if (duration > 0) {

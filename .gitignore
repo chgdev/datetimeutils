@@ -1,1 +1,5 @@
+.cache
 node_modules
+coverage
+input.txt
+travis.log

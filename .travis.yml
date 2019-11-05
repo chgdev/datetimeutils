@@ -1,16 +1,19 @@
 language: node_js
 node_js:
-- '8.15'
+- '10.16'
 script:
 - npm ci
 stages:
 - name: test
+- name: build
 - name: deploy
   if: branch = master
 jobs:
   include:
   - stage: test
     script: npm run test
+  - stage: build
+    script: npm run build
 deploy:
   provider: npm
   email: joseph.vanwagoner@chghealthcare.com

@@ -1,21 +1,24 @@
 language: node_js
 node_js:
-- '8.15'
+- '10.16'
 script:
 - npm ci
 stages:
 - name: test
+- name: build
 - name: deploy
   if: branch = master
 jobs:
   include:
   - stage: test
     script: npm run test
+  - stage: build
+    script: npm run build
 deploy:
   provider: npm
-  email: joseph.vanwagoner@chghealthcare.com
+  email: chgpdeteam+npm@gmail.com
   api_key:
-    secure: JAFK8u0UkIuArpvxULzZdP5ERKtoMe4z1u6EFrIVLgZvkMkbhRzXFCkkHfAWA9tikI79XTh+Bv/EGgnB3gTlodx0WVsb1ZJ7keJwZeozjr0gUCMp5/6Dr8UbW1HuVdvCyna7FtOx/4kE+0huqqc4Fb4nvlHaFT52QSIuGNTEscN20ofMBrSu1+6IjXBvsxBfYosfWi4XSlqNqg7G9yA/dyBNA/tgrwtfuEGWwfGf84VCckoxHN03+OD/gkuUbKrQToiUZrQ12Eyiju4LviwEUirbJNQvxVyXPP6zF2xoQ/3jMTWJyUjdMpNfgzkn19UGXfU/o5WWPIctSTVnC7F6fKMu+Drlhlt7ka0Mc2d6fzDwKypFjTq+mu9L5xMJno3xspu2tp5pss1Nej9dxK16cnxCOHCEI1hmoyOlQyqhVYoe8H44eW/sGQEbqTt+oCBJDfo8vYlFzJVKkE2DqnggWz8ozhXu+3v9ZlRyPTv2znbqMpVIwSgv4fBs6MqCqWFa5haUQ9w82qFDzdtohjUSwE+MM2uAkWpTkrRetyo7a8FaI5Smd5T5f1WKsFJna2SjrDwkiQm+xogxNTbuhvyITrcLxOcuNYrucOEvYzXwaD7LSi5rfVjHnqjX1OURL+c5jssRqTQ0LNWDHUPteDkSpjrVh461fiEreV9pavWooxc=
+    secure: BQPIVSm4YWNB6GrWxhVbFPplLya8pZMUbWklqtPV2goIkvvMajPbwasGkUlo+SGw+QQzmuLoPvR0mi9Lpeg8c+4uM72WFGeVXtuFtR6zS22ETDllZNEezlxQmgPcsTHbbJDwkVXxnhwwnPeB8vAYDxB500CX+oCoSYbuPZ3boE0jVY8P/d7CtNmyBMssNlqwt2EkSn93rUsaYkEiaX2qqk9I4SYreTsHAXJz+rBGVqwTLLJcbJ+i+cvduILqKIqOBwOYQrrmNiIUyZOIOQ5GJTn5DUoCppaQ/eyeqUI77wP0+KRtdtHcljR/mx3ywa+PU9wg40nC8RWG18spKEQe75Yio1/LTnHAnM37yhxmud+HJthR+CaHxnCB336BgYDOyiVURamIZZuTsZG1C6sE+twGuKnFfllm9DWhrkqWGKgGK/3MICphZPU0Wwey4cOKqffpntTeyGIjkdTF/iznUHSTc/3MFsYg/6EnCbklgxK8V5Vb1LAq6WC5KvOSDl19/VVsOPK2B0+qlsh3GhnbYWQWLDFrX4TE0b71mT7F4XXNuv0R4Bt1zd7CQPkpyC6YHfHo4cJHVLUlE+5AEd++OtfcyhyoQ6k7A48U6oFwedlBLZKBIvXxoltBQhyRI/3ZREPCKTDZRDWNh68PMrkFjT63pQCqvn6uNx3hTUDYx5g=
   on:
     repo: chgdev/datetimeutils
     branch: master

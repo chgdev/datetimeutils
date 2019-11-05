@@ -1,14 +1,19 @@
 {
   "name": "@chg/date-time-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This allows for basic date and time calculations",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "parcel build index.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint ."
   },
-  "keywords": ["chg", "dates", "calculations"],
+  "keywords": [
+    "chg",
+    "dates",
+    "calculations"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chgdev/datetimeutils.git"
@@ -27,6 +32,7 @@
     "husky": "^3.0.9",
     "jest": "^24.9.0",
     "jest-chain": "^1.1.2",
-    "jest-extended": "^0.11.2"
+    "jest-extended": "^0.11.2",
+    "parcel-bundler": "^1.12.4"
   }
 }

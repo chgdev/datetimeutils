@@ -1,6 +1,6 @@
 {
   "name": "@chg/date-time-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This allows for basic date and time calculations",
   "main": "dist/index.js",
   "scripts": {

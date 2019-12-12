@@ -16,9 +16,8 @@ jobs:
     script: npm run build
 deploy:
   provider: npm
-  email: chgpdeteam+npm@gmail.com
-  api_key:
-    secure: BQPIVSm4YWNB6GrWxhVbFPplLya8pZMUbWklqtPV2goIkvvMajPbwasGkUlo+SGw+QQzmuLoPvR0mi9Lpeg8c+4uM72WFGeVXtuFtR6zS22ETDllZNEezlxQmgPcsTHbbJDwkVXxnhwwnPeB8vAYDxB500CX+oCoSYbuPZ3boE0jVY8P/d7CtNmyBMssNlqwt2EkSn93rUsaYkEiaX2qqk9I4SYreTsHAXJz+rBGVqwTLLJcbJ+i+cvduILqKIqOBwOYQrrmNiIUyZOIOQ5GJTn5DUoCppaQ/eyeqUI77wP0+KRtdtHcljR/mx3ywa+PU9wg40nC8RWG18spKEQe75Yio1/LTnHAnM37yhxmud+HJthR+CaHxnCB336BgYDOyiVURamIZZuTsZG1C6sE+twGuKnFfllm9DWhrkqWGKgGK/3MICphZPU0Wwey4cOKqffpntTeyGIjkdTF/iznUHSTc/3MFsYg/6EnCbklgxK8V5Vb1LAq6WC5KvOSDl19/VVsOPK2B0+qlsh3GhnbYWQWLDFrX4TE0b71mT7F4XXNuv0R4Bt1zd7CQPkpyC6YHfHo4cJHVLUlE+5AEd++OtfcyhyoQ6k7A48U6oFwedlBLZKBIvXxoltBQhyRI/3ZREPCKTDZRDWNh68PMrkFjT63pQCqvn6uNx3hTUDYx5g=
+  email: "$NPM_EMAIL"
+  api_key: "$NPM_TOKEN"
   on:
     repo: chgdev/datetimeutils
     branch: master
